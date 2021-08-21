@@ -15,7 +15,7 @@ def passon():
          messagebox.showerror(title='ERROR', message='Something went wrong, try again.')
      else:
          text_area.delete(5.0, END)
-         for l in lyrics:
+         for l in lyrics[4:]:
             text_area.insert(END, f'{l}\n')
 
 def clear():
